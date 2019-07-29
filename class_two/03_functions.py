@@ -1,5 +1,7 @@
 
 # FUNCTIONS
+# how to you know the block is associated with the function with throu
+# indentation -- use 4 spaces NOT tab
 
 # A function is like a mini-program within a program.
 def hello():
@@ -9,7 +11,7 @@ def hello():
 
 # Can you run the function hello()?
 
-
+hello()
 
 
 
@@ -33,7 +35,9 @@ def hello_new_friend(name):
     if name == 'Nathan':
         print('Hey Nate')
     else:
-        print('Hey ', name)
+        print('Hey', name)
+
+hello_new_friend("Naan")
 
 
 ### Exercise:
@@ -43,6 +47,22 @@ def hello_new_friend(name):
 # "My name is {name} and I am learning {language}."
 
 ## Bonus -- if you are learning 'python', then it prints out 'This is cool!'
+
+
+def learning_programming(name, language):
+    #print("My name is {name} and I am learning {language}")
+    #print("My name is {} and I am learning {}").format(name, language)
+    # print("My name is " + name + " I am learning" + language)
+    if language == "python":
+        # print("My name is " + name + " I am learning " + language)
+        print("This is cool! You're learning Python")
+    else:
+        print("My name is" + name + " I am learning" + language)
+    
+
+learning_programming('claire', 'python')
+
+print([1, 2, 3])
 
 ### Learn More About Functions
 # https://automatetheboringstuff.com/chapter3/

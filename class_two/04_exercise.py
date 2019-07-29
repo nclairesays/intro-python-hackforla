@@ -26,6 +26,7 @@ def get_list_cities(addresses):
     """
 
     cities = []
+
     for address in list_of_addresses:
 
         city_name = extract_city_name(address)
@@ -35,13 +36,16 @@ def get_list_cities(addresses):
     return cities
 
 
+
+
 def extract_city_name(address_string):
     """A helper function used in get_list_cities to extract the city name from the address_string.
 
     Look at "02_strings" for hints
     """
     #### EXERCISE: Implement extract city from string here
-
+    address_string[0:-10]
+    
     return address_string
 
 

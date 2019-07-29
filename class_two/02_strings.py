@@ -3,21 +3,25 @@
 
 s = str(42)
 
-s  # convert another data type into a string (casting)
+s  # convert another data type into a string (casting) -- casting coverts the type
 
 s = 'I like you'
 
 # examine a string
 s[0]  # returns 'I'
 
-len(s)  # returns 10
+len(s)  # returns 10, including white space characters
 
 # string slicing like lists
 s[0:7]  # returns 'I like '
 
+# print(repr(s[0:7]))         #repr() -- see what the computer will see, so this will include the white space.
+# help(repr)                  # "Return the canonical string representation of the object.""
+
 s[6:]  # returns 'you'
 
-s[-1]  # returns 'u'
+s[-1]  # returns 'u'   # negative index, going backwords
+
 
 
 # EXERCISE: Extract State from Addresses (Part 1)
@@ -28,6 +32,14 @@ s[-1]  # returns 'u'
 address_1 = "Austin, TX 78701"
 address_2 = "Washington, DC 20001"
 address_3 = "North Hollywood, CA 91601"
+
+
+
+state_one = address_1[-8:-6]
+state_two = address_2[-8:-6]
+state_three = address_3[-8:-6]
+
+print(state_one)
 
 
 # STRINGS - Part II
@@ -45,8 +57,8 @@ s.split()           # same thing
 
 # another example: split a string into a list of substrings separated by a delimiter
 address = 'Toluca Lake, CA 91602'
-address.split(',')        # returns ['Toluca Lake','CA','91602']
-address.split()           # same thing
+address.split(',')        # returns ['Toluca Lake',' CA 91602']
+address.split()           # ['Toluca', 'Lake', 'CA', '91602' ]
 
 
 ## Learn more with Automate the Boring Stuff:
